@@ -1,0 +1,276 @@
+/*:root {
+    --corPrimario: #04364A;
+    --corSecundaria: #DAFFFB;
+    --corTerciaria: #176B87;
+    --corQuartenaria: #64CCC5;
+}
+*/
+:root {
+    --corPrimario: #001524;
+    --corSecundaria: #F0DE36;
+    --corTerciaria: #445D48;
+    --corQuartenaria: #FDE5D4;
+}
+
+.bg-azul {
+    background-color: var(--corPrimario);
+    /* background-image: url(../img/nav1.jpg); */
+    color: var(--corSecundaria);
+    /* background-image: url('../img/nav1.jpg'); */
+    /* Caminho para sua imagem de fundo */
+    /* background-size: 100%; */
+    /* Ajuste a imagem para cobrir todo o elemento do nav */
+    /* background-repeat: no-repeat; */
+    /* Evita que a imagem se repita */
+    /* background-position: center; */
+    /* Centraliza a imagem no nav */
+
+
+}
+
+.bg-azul-f {
+    background-color: var(--corPrimario);
+    /* background-image: url(../img/nav1.jpg); */
+
+    /* background-image: url('../img/nav1.jpg'); */
+    /* Caminho para sua imagem de fundo */
+    /* background-size: 100%; */
+    /* Ajuste a imagem para cobrir todo o elemento do nav */
+    /* background-repeat: repeat; */
+    /* Evita que a imagem se repita */
+    /* background-position: center; */
+    /* Centraliza a imagem no nav */
+
+    font-family: 'wood';
+
+    letter-spacing: 2px;
+    color: white;
+
+
+}
+
+.bg-azul .nav-link,
+.bg-azul .nav-link.active {
+    color: rgb(255, 254, 254);
+
+}
+
+@font-face {
+    font-family: 'wood';
+    src: url(../font/WoodfordBournePRO-Regular.otf)
+}
+
+.logo {
+    max-width: 300px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+
+
+
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.margin1 {
+    width: 90%;
+    border-bottom: 1px solid var(--corSecundaria);
+
+
+}
+
+.margin2 {
+    width: 90%;
+    border-top: 1px solid var(--corSecundaria);
+
+
+}
+
+
+.navbar a.active {
+    border-bottom: 1px solid var(--corSecundaria);
+}
+
+.navbar a:hover {
+    color: #000000;
+
+
+
+}
+
+
+.fonte-externa-card {
+    font-family: 'wood';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--corPrimario);
+    font-weight: bold;
+}
+
+nav .fonte-externa {
+    font-family: 'wood';
+    font-size: 15px;
+    letter-spacing: 3px;
+
+}
+
+
+
+.fonte-externa-f {
+    font-family: 'wood';
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+footer i {
+    color: white;
+}
+
+footer i:hover {
+    color: var(--corSecundaria);
+    cursor: pointer;
+}
+
+#relogio {
+    color: var(--corSecundaria);
+    letter-spacing: 3px;
+    font-size: 8px;
+    font-style: normal;
+}
+
+.border-bottom-ser {
+    border-bottom: 2px solid var(--corSecundaria);
+
+}
+
+.border-bottom-ser2 {
+    border-bottom: 2PX solid rgb(218, 4, 4);
+}
+
+.border-bottom-ser3 {
+    border-bottom: 2PX solid rgb(82, 218, 4);
+}
+
+.border-card {
+    border-style: none;
+    transition: all 0.2s ease-in-out;
+    font-family: wood;
+}
+
+.border-card:hover {
+    border: 2px solid var(--corSecundaria);
+    color: var(--corSecundaria);
+    box-shadow: 0 0 35px var(--corSecundaria), inset 0 0 2px var(--corSecundaria);
+    text-shadow: 0 0 35px var(--corSecundaria), inset 0 0 2px var(--corSecundaria);
+
+}
+
+.btn-card {
+    background-color: var(--corPrimario);
+    color: white;
+
+    text-transform: uppercase;
+    font-family: 'wood';
+    font-size: small;
+}
+
+.btn-card:hover {
+    color: black;
+    font-weight: bold;
+    background: var(--corSecundaria);
+    border: 2px solid var(--corSecundaria);
+
+}
+
+.aviso {
+    background-color: var(--corPrimario);
+
+    font-family: 'wood';
+    color: white;
+
+}
+
+#texto_leva_e_traz {
+    line-height: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #036b14;
+}
+
+#texto_leva_e_traz span {
+    color: var(--corPrimario);
+
+}
+
+.fonte-externa-itens {
+    font-family: 'wood';
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--corPrimario);
+
+}
+
+.texto-footer {
+    font-family: 'wood';
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.texto-footer-direitos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+
+
+}
+
+.tamanho {
+    background-color: var(--corPrimario);
+    color: var(--corPrimario);
+}
+
+.figure1 {
+    width: 100%;
+}
+
+.aviso2 {
+    background-color: rgb(53, 30, 77);
+
+    font-family: 'wood';
+    color: white;
+
+}
+
+.sessao-imagem-10{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+ }
+ 
+ .border-card2 {
+    border-style: none;
+    transition: all 0.2s ease-in-out;
+    font-family: wood;
+}
+.border-card2:hover {
+    border: 4px solid rgb(37, 37, 156);
+    color: rgb(37, 37, 156);
+    box-shadow: 0 0 55px rgb(37, 37, 156), inset 0 0 2px rgb(37, 37, 156);
+    text-shadow: 0 0 55px rgb(37, 37, 156), inset 0 0 2px rgb(37, 37, 156);
+
+}
+.carousel-inner > .carousel-item > img {
+    width: 700px;
+    height: 400px; 
+  }
