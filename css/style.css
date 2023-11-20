@@ -89,7 +89,7 @@
 }
 
 
-.navbar a.active {
+.navbar a.active{
     border-bottom: 1px solid var(--corSecundaria);
 }
 
@@ -104,7 +104,7 @@
 .fonte-externa-card {
     font-family: 'wood';
     text-transform: uppercase;
-    letter-spacing: 2px;
+    
     color: var(--corPrimario);
     font-weight: bold;
 }
@@ -198,7 +198,7 @@ footer i:hover {
 #texto_leva_e_traz {
     line-height: 25px;
     text-align: center;
-    font-size: 18px;
+    
     color: #036b14;
 }
 
@@ -280,6 +280,14 @@ footer i:hover {
 .perfil_depoimentos {
     border: 1px solid var(--corTerciaria);
     border-radius: 50%;
-    
-    
+
+
+}
+
+#mapaSite:hover {
+    color: var(--corSecundaria);
+}
+
+.nav-link.active {
+color: var(--corSecundaria);
 }
