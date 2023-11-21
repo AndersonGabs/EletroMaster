@@ -91,6 +91,7 @@
 
 .navbar a.active{
     border-bottom: 1px solid var(--corSecundaria);
+    justify-content: space-evenly;
 }
 
 .navbar a:hover {
@@ -290,4 +291,20 @@ footer i:hover {
 
 .nav-link.active {
 color: var(--corSecundaria);
+}
+.cardProdutos{
+    font-family: 'wood';
+    color: var(--corPrimario);
+   
+}
+.card-img-top{
+    object-fit: contain;
+    height: 250px;
+    
+}
+.fonteWood{
+font-family: 'wood';
+text-transform: none;
+font-weight: normal;
+
 }
