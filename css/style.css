@@ -24,7 +24,7 @@
     /* Evita que a imagem se repita */
     /* background-position: center; */
     /* Centraliza a imagem no nav */
-
+align-items: stretch;
 
 }
 
@@ -49,11 +49,11 @@
 
 }
 
-.bg-azul .nav-link,
-.bg-azul .nav-link.active {
+ .bg-azul .nav-link, 
+ .bg-azul .nav-link.active { 
     color: rgb(255, 254, 254);
 
-}
+ } 
 
 @font-face {
     font-family: 'wood';
@@ -273,14 +273,15 @@ footer i:hover {
 
 }
 
-.carousel-inner>.carousel-item>img {
+/* .carousel-inner>.carousel-item>img {
     width: 700px;
     height: 400px;
-}
+} */
 
 .perfil_depoimentos {
     border: 1px solid var(--corTerciaria);
     border-radius: 50%;
+    object-fit: contain;
 
 
 }
@@ -307,4 +308,7 @@ font-family: 'wood';
 text-transform: none;
 font-weight: normal;
 
+}
+.carrossel{
+    object-fit: contain;
 }

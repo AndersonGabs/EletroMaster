@@ -14,6 +14,7 @@ function mostraHora(){
         mostraHora,
         100
     )
+let btn = document.getElementById('btn')
 let containerProdutos = document.getElementById('containerProdutos')
 function carregarContainer() {
 
@@ -26,7 +27,7 @@ function carregarContainer() {
         if(i % 2 == 0){
 
             containerProdutos.innerHTML += `
-            <div class="col-lg-3 col-md-4 col-6 mb-3 pb-5" data-aos="fade-up"    data-aos-duration="1000"  data-aos-offset="300">
+            <div class="col-lg-3 col-md-4 col-6 mb-3 pb-5" data-aos="fade-up"    data-aos-duration="1000"  data-aos-offset="100">
             <div class="card h-80 text-center ">
               <img src="${dados[i].url}" class="card-img-top p-3 bg-white" alt="...">
               <div class= "card-header bg-dark text-white">
@@ -36,7 +37,7 @@ function carregarContainer() {
                 <h5 class="card-title text-success" style="font-weight: bold">${dados[i].produto}</h5>
                 <p class="card-text ">${dados[i].descricao}</p>
               </div>
-              <div class="card-footer text-body-secondary bg-warning "> 
+              <div class="card-footer text-white bg-warning "> 
                 <small " >${dados[i].categoria}</small>
               </div>
             </div>
@@ -45,7 +46,7 @@ function carregarContainer() {
         }else{
 
             containerProdutos.innerHTML += `
-            <div class="col-lg-3 col-md-4 col-6 mb-3 pb-5" data aos="fade-up-right"    data-aos="zoom-in" data-aos-duration="1000"  data-aos-offset="300">
+            <div class="col-lg-3 col-md-4 col-6 mb-3 pb-5" data-aos="fade-down" data-aos-duration="1000"  data-aos-offset="100">
             <div class="card h-80 text-center ">
               <img src="${dados[i].url}" class="card-img-top p-3 bg-white " alt="...">
               <div class= "card-header bg-dark text-white">
@@ -55,7 +56,7 @@ function carregarContainer() {
                 <h5 class="card-title text-success" style="font-weight: bold">${dados[i].produto}</h5>
                 <p class="card-text">${dados[i].descricao}</p>
               </div>
-              <div class="card-footer bg-warning text-body-secondary">
+              <div class="card-footer bg-warning text-white">
                 <small>${dados[i].categoria}</small>
               </div>
             </div>
@@ -73,5 +74,46 @@ function carregarContainer() {
 
 
 }
+function filtrar(){
+  let opc=document.getElementById('opc').value;
+  
+  containerProdutos.innerHTML = ''
+  for (let i = 0; i < dados.length; i++) {
+      
+      if(opc==dados[i].categoria){
+        
+          
+
+        containerProdutos.innerHTML += `
+            <div class="col-lg-3 col-md-4 col-6 mb-3 pb-5" data-aos="fade-up"    data-aos-duration="1000"  data-aos-offset="100">
+            <div class="card h-80 text-center ">
+              <img src="${dados[i].url}" class="card-img-top p-3 bg-white" alt="...">
+              <div class= "card-header bg-dark text-white">
+              ${dados[i].valor}
+              </div>
+              <div class="card-body ">
+                <h5 class="card-title text-success" style="font-weight: bold">${dados[i].produto}</h5>
+                <p class="card-text ">${dados[i].descricao}</p>
+              </div>
+              <div class="card-footer text-white bg-warning "> 
+                <small " >${dados[i].categoria}</small>
+              </div>
+            </div>
+            `
+          
+
+      }
+      
+      if(opc == 0){
+          carregarContainer()
+      }
+
+  
+  }
+
+}
+
+btn.addEventListener("click",filtrar)
+
 
 carregarContainer()

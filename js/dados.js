@@ -16,7 +16,7 @@ let dados = [
     {
         produto: 'Película vidro',
         categoria:'Celular',
-        descricao:'Película de Vidro Temperado iPhone XR Bordas Pretas, Cobertura Total',
+        descricao:'Película de Vidro Temperado iPhone XR Bordas Pretas, Cobertura Total, varios modelos',
         valor: 'R$ 19,90',
         url:'../img/pelicula.jpg',
     },
@@ -37,7 +37,7 @@ let dados = [
     {
         produto: 'Pen drive',
         categoria:'Computador',
-        descricao:'Sandisk Pen drive USB Cruzer Blade, 64 GB, preto/vermelho à prova de quedas',
+        descricao:'Sandisk Pen drive USB Cruzer Blade, 64 GB, preto/vermelho à prova de quedas, leitura rápida',
         valor: 'R$ 49,90',
         url:'../img/pendrive.jpg',
     },
@@ -58,21 +58,21 @@ let dados = [
     {
         produto: 'Câmera',
         categoria:'Eletrônicos',
-        descricao:'Camera Dome Wifi HD 360 Visao Noturna Panoramica Segurança Sem Fio',
+        descricao:'Camera Dome Wifi HD 360 Visao Noturna Panoramica Segurança Sem Fio, fácil configuração',
         valor: 'R$ 169,90',
         url:'../img/camera.jpg',
     },
     {
         produto: 'Mini caixa de som',
         categoria:'Eletrônicos',
-        descricao:'Mini Caixa de Som Bluetooth Metal Amplificada Mini Speaker 3w - Vermelho',
+        descricao:'Mini Caixa de Som Bluetooth Metal Amplificada Mini Speaker 3w - Vermelho, cinza',
         valor: 'R$ 49,90',
         url:'../img/mini.jpg',
     },
     {
         produto: 'Roteador',
         categoria:'Internet',
-        descricao:'ROTEADOR WIRELESS 300 MBPS  2 ANTENAS TL-WR840N-W 2 Antenas externas',
+        descricao:'ROTEADOR WIRELESS 300 MBPS  2 ANTENAS TL-WR840N-W 2 Antenas externas WPS',
         valor: 'R$ 149,90',
         url:'../img/roteador.jpg',
     },
