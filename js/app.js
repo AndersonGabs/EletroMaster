@@ -37,7 +37,7 @@ function carregarContainer() {
                 <h5 class="card-title text-success" style="font-weight: bold">${dados[i].produto}</h5>
                 <p class="card-text ">${dados[i].descricao}</p>
               </div>
-              <div class="card-footer text-white bg-warning "> 
+              <div class="card-footer text-body-secondary bg-warning "> 
                 <small " >${dados[i].categoria}</small>
               </div>
             </div>
@@ -56,7 +56,7 @@ function carregarContainer() {
                 <h5 class="card-title text-success" style="font-weight: bold">${dados[i].produto}</h5>
                 <p class="card-text">${dados[i].descricao}</p>
               </div>
-              <div class="card-footer bg-warning text-white">
+              <div class="card-footer text-body-secondary bg-warning">
                 <small>${dados[i].categoria}</small>
               </div>
             </div>
@@ -95,7 +95,7 @@ function filtrar(){
                 <h5 class="card-title text-success" style="font-weight: bold">${dados[i].produto}</h5>
                 <p class="card-text ">${dados[i].descricao}</p>
               </div>
-              <div class="card-footer text-white bg-warning "> 
+              <div class="card-footer text-body-secondary bg-warning "> 
                 <small " >${dados[i].categoria}</small>
               </div>
             </div>

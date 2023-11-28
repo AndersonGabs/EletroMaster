@@ -24,7 +24,7 @@
     /* Evita que a imagem se repita */
     /* background-position: center; */
     /* Centraliza a imagem no nav */
-align-items: stretch;
+    align-items: stretch;
 
 }
 
@@ -49,11 +49,11 @@ align-items: stretch;
 
 }
 
- .bg-azul .nav-link, 
- .bg-azul .nav-link.active { 
+.bg-azul .nav-link,
+.bg-azul .nav-link.active {
     color: rgb(255, 254, 254);
 
- } 
+}
 
 @font-face {
     font-family: 'wood';
@@ -89,7 +89,7 @@ align-items: stretch;
 }
 
 
-.navbar a.active{
+.navbar a.active {
     border-bottom: 1px solid var(--corSecundaria);
     justify-content: space-evenly;
 }
@@ -105,7 +105,7 @@ align-items: stretch;
 .fonte-externa-card {
     font-family: 'wood';
     text-transform: uppercase;
-    
+
     color: var(--corPrimario);
     font-weight: bold;
 }
@@ -199,7 +199,7 @@ footer i:hover {
 #texto_leva_e_traz {
     line-height: 25px;
     text-align: center;
-    
+
     color: #036b14;
 }
 
@@ -291,24 +291,71 @@ footer i:hover {
 }
 
 .nav-link.active {
-color: var(--corSecundaria);
+    color: var(--corSecundaria);
 }
-.cardProdutos{
+
+.cardProdutos {
     font-family: 'wood';
     color: var(--corPrimario);
-   
-}
-.card-img-top{
-    object-fit: contain;
-    height: 250px;
-    
-}
-.fonteWood{
-font-family: 'wood';
-text-transform: none;
-font-weight: normal;
 
 }
-.carrossel{
+
+.card-img-top {
     object-fit: contain;
+    height: 250px;
+
+}
+
+.fonteWood {
+    font-family: 'wood';
+    text-transform: none;
+    font-weight: normal;
+
+}
+
+.carrossel {
+    object-fit: contain;
+}
+
+#linha-vertical {
+    width:1%;
+    height: 70%;
+    border-right: 1px solid #036b14;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+#linha-vertical2 {
+    width:1%;
+    height: 70%;
+    border-left: 1px solid #073892;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+#clientee label{
+    color: #036b14;
+    margin-top: 7px;
+}
+.bg-verde{
+    background-color:#1f5228; 
+    /* background-image: url(../img/back1.jpg); */
+    /* color: var(--corSecundaria); */
+    /* background-image: url('../img/nav1.jpg'); */
+    /* Caminho para sua imagem de fundo */
+    /* background-size: 100%;  */
+    /* Ajuste a imagem para cobrir todo o elemento do nav */
+    /* background-repeat: no-repeat;  */
+    /* Evita que a imagem se repita */
+    /* background-position: center;
+    object-fit: contain;  */
+    
+   
+    /* Centraliza a imagem no nav */
+    
+
+}
+#serviço label{
+    color:#073892;
+    margin-top: 7px;
 }

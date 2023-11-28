@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eletro Master - Conserto de Aparelhos eletro eletrônicos em geral Aparecida-SP">
+  <meta name="keywords" content="Orçamento, Eletronica, Guaratinguetá, Aparecida, TV, Smartphone, microondas">
+  <title>Agendamento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="bg-azul">
+
+    <div class="row  margin1 m-sm-auto  m-auto pb-3">
+
+
+
+      <div class="container col-md-6 ms-0  p-0 col-7 col-sm-6  ">
+
+        <a class="navbar-brand " href="#">
+          <img src="../img/eletro.png" alt="logo" class=" logo w-100">
+        </a>
+      </div>
+      <div class=" row text-center pt-3 col-5  p-0 me-0  ">
+        <i class="bi bi-clock fs-6 col-12  col-md-12 " id="relogio">HH:MM:SS
+          <!-- <p class=" col-md-12  ps-0 border border-success"></p> -->
+        </i>
+
+      </div>
+
+
+
+
+    </div>
+
+    </div>
+
+
+  </header>
+
+  <nav class="navbar navbar-expand-md bg-azul ">
+
+    <div class="container-fluid  m-0 ">
+
+
+      <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent " aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+
+      <div class="collapse navbar-collapse text-center " id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-lg-0 m-auto fonte-externa">
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning" aria-current="page" href="../index.html">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning nav-link" href="Quem Somos.html">QUEM SOMOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning" href="Serviços.html">SERVIÇOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning" href="Produtos.html">PRODUTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Agendamentos.html">AGENDAMENTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning" href="Serviços.html">DICAS</a>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="justify-content-center bg-verde  text-white">
+    <section id="clientee" >
+      <div class="row col-12 m-auto   p-3">
+        <div class=" col-12 my-5 col-md-12 m-auto  ">
+          <h2 class="fonte-externa-card   col-12 margin1  text-white m-auto" style="border-color: gray">
+            Agendamento
+          </h2>
+        </div>
+
+      </div>
+      <div class="row col-12 col-md-10   m-auto   p-2">
+
+        <div class="bg-white mx-auto row fonteWood  " style="border: 3px solid black">
+
+          <div class=" col-md-8 mx-auto col-10 my-0 p-0 ">
+            <form class="row  px-0 py-5 ">
+
+              <div class="form-group col-md-6 col-6">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+              </div>
+              <div class="form-group col-md-6 col-6">
+                <label for="inputPassword4">Telefone</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Telefone">
+              </div>
+
+              <form method="get" class="form-row row" action=".">
+                <div class="form-group col-md-3 col-6">
+                  <label for="cep">Cep*</label>
+                  <input type="text" name="cep" class="form-control" id="cep" required placeholder="*Obrigatório"
+                    value="" size="10" maxlength="9">
+                </div>
+
+
+                <div class="form-group col-md-7 col-12 ">
+                  <label for="inputCity">Rua</label>
+                  <input type="text" name="rua" id="rua" size="60" class="form-control">
+                </div>
+                <div class="form-group col-md-2 col-4">
+                  <label for="inputCity">Numero</label>
+                  <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="form-group col-md-5 col-6">
+                  <label for="inputCity">Bairro</label>
+                  <input type="text" name="bairro" id="bairro" size="40" class="form-control">
+                </div>
+                <div class="form-group col-md-5 col-6">
+                  <label for="inputCity">Cidade</label>
+                  <input type="text" class="form-control" name="cidade" id="cidade" size="40">
+                </div>
+
+                <div class="form-group col-md-2  border col-4">
+                  <label for="inputCEP">Estado</label>
+                  <input name="uf" type="text" id="uf" size="2" class="form-control">
+                </div>
+
+              </form>
+
+
+            </form>
+
+          </div>
+          <div class="col-1 col-md-1 " id="linha-vertical"></div>
+          <div class="row  container col-md-3 col-5 fs-1 m-auto text-center border " data-aos="flip-right" data-aos-duration="500">
+            <h4 class="fs-1 m-auto mb-2 text-center align-self-center" style="color: #036b14;">Cliente</h4>
+
+            <div class="col-12 mb-2  col-md-12 m-auto ">
+              <figure>
+                <img src="../img/clienttee.jpg" alt="cliente" class="img-fluid" style="object-fit: contain;">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fim form1  -->
+    <section id="serviço">
+      <!-- inicio form2 -->
+      <div class="row col-12 col-md-10   m-auto   p-2">
+        <div class="bg-white mx-auto row fonteWood " style="border: 3px solid black">
+
+          <div class="row col-6 col-md-3 fs-1 m-auto text-center " data-aos="flip-right" data-aos-duration="500">
+            <h4 class="fs-1 m-auto mb-2 text-center align-self-center" style="color: #073892;">Serviço</h4>
+
+            <div class="col-12 mb-2  col-md-12 m-auto ">
+              <figure>
+                <img src="../img/repair.jpg" alt="reparo" class="w-100" style="object-fit: contain;">
+              </figure>
+            </div>
+          </div>
+          <div class="col-1 col-md-1 " id="linha-vertical2"></div>
+          <div class=" col-md-8 mx-auto col-10 px-0 ">
+            <form class="row  px-0 py-5 labelazul ">
+
+              <div class="form-group col-md-6 col-6">
+                <label for="nome">Tipo de Serviço</label>
+                <select id="tipoServiço" class="form-control text-center">
+
+                  <option value="0">Selecione uma Categoria</option>
+                  <option value="Instalação elétrica">Instalação eletrica</option>
+                  <option value="Retirada de Aparelho">Retirada de Aparelho</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6 col-6">
+                <label for="inputPassword4">Aparelho:</label>
+                <input type="aparelho" class="form-control" id="aparelho" placeholder="Aparelho">
+              </div>
+
+
+              <div class="form-group col-md-12 col-12">
+                <label for="exampleFormControlTextarea1">Defeito/Descrição do Problema:</label>
+                <textarea class="form-control" id="defeito" rows="2"></textarea>
+              </div>
+
+              <div class="form-group col-md-7 col-12 ">
+                <label for="inputCity">Data e Horario de Serviço</label>
+                <input type="datetime-local" name="rua" id="rua" class="form-control">
+              </div>
+
+
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="m-auto  col-10 text-center "> 
+      <button type="submit" class=" text-center col-6 col-md-3 mb-5 mt-2 btn btn-outline-warning" id="agendar">Agendar</button>
+    </div>
+  </main>
+  <!-- Inicio do formulario -->
+  <!-- <form method="get" action=".">
+    <label>Cep:
+      <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" /></label><br />
+    <label>Rua:
+      <input name="rua" type="text" id="rua" size="60" /></label><br />
+    <label>Bairro:
+      <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+    <label>Cidade:
+      <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+    <label>Estado:
+      <input name="uf" type="text" id="uf" size="2" /></label><br />
+    <label>IBGE:
+      <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+  </form> -->
+  <!--  inicio secao2 -->
+
+  <footer class="container-fluid bg-azul-f">
+
+    <div class=" p-5">
+      <div class="row">
+
+        <div class="col-12 col-md-4 col-sm-6  text-center col-sm-7 mb-2">
+          <h2 class="fonte-externa-f mb-5">Nossa Loja</h2>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.2034098616123!2d-45.220550924660316!3d-22.83196273520121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc484580c4b47%3A0x69a200fc17caf009!2seletro%20MASTER!5e0!3m2!1spt-BR!2sbr!4v1696551787125!5m2!1spt-BR!2sbr"
+              class="w-100" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p class="texto-footer">Av. Padroeira do Brasil 827 Aparecida-sp </p>
+        </div>
+        <div class=" col-md-4 col-sm-5 mb-4">
+          <h2 class="fonte-externa-f text-center mb-3">Mapa do site</h2>
+          <div class="text-center  justify-content-center mt-5">
+            <a class="nav-link   text-center texto-footer mb-2" aria-current="page" href="../index.html"
+              id="mapaSite">INÍCIO</a>
+            <a class="nav-link  texto-footer mb-2" id="mapaSite" href="Quem Somos.html">QUEM SOMOS</a>
+            <a class="nav-link  mb-2 texto-footer" id="mapaSite" href="Serviços.html">SERVIÇOS</a>
+            <a class="nav-link active texto-footer mb-2" href="#" id="mapaSite">PRODUTOS</a>
+            <a class="nav-link  texto-footer mb-2" href="Agendamento.html" id="mapaSite">AGENDAMENTO</a>
+            <a class="nav-link  texto-footer mb-2" href="Dicas.html" id="mapaSite">DICAS</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-sm-12 text-center mb-2">
+          <h2 class="fonte-externa-f text-center mb-3">Rede de contatos</h2>
+          <div class="mt-5">
+            <a href="https://api.whatsapp.com/send?phone=5512997510745" target="_blank" class="tamanho ">
+              <i class=" bi bi-whatsapp fs-3 m-2 "></i>
+            </a>
+            <a href="https://www.facebook.com/eletromasterAparecida/" target="_blank" class="tamanho">
+              <i class=" bi bi-facebook fs-3 m-2"></i>
+            </a>
+            <a href="https://www.instagram.com/eletroomaster/" target="_blank" class="tamanho">
+              <i class="bi bi-instagram fs-3 m-2"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="margin2 m-auto  text-center p-4 ">
+      <i class="bi bi-c-circle texto-footer-direitos">BBTECH todos os direitos reservados</i>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/dados.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+
+    $(document).ready(function () {
+
+      function limpa_formulário_cep() {
+        // Limpa valores do formulário de cep.
+        $("#rua").val("");
+        $("#bairro").val("");
+        $("#cidade").val("");
+        $("#uf").val("");
+        $("#ibge").val("");
+      }
+
+      //Quando o campo cep perde o foco.
+      $("#cep").blur(function () {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = $(this).val().replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+          //Expressão regular para validar o CEP.
+          var validacep = /^[0-9]{8}$/;
+
+          //Valida o formato do CEP.
+          if (validacep.test(cep)) {
+
+            //Preenche os campos com "..." enquanto consulta webservice.
+            $("#rua").val("...");
+            $("#bairro").val("...");
+            $("#cidade").val("...");
+            $("#uf").val("...");
+            $("#ibge").val("...");
+
+            //Consulta o webservice viacep.com.br/
+            $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+
+              if (!("erro" in dados)) {
+                //Atualiza os campos com os valores da consulta.
+                $("#rua").val(dados.logradouro);
+                $("#bairro").val(dados.bairro);
+                $("#cidade").val(dados.localidade);
+                $("#uf").val(dados.uf);
+                $("#ibge").val(dados.ibge);
+              } //end if.
+              else {
+                //CEP pesquisado não foi encontrado.
+                limpa_formulário_cep();
+                alert("CEP não encontrado.");
+              }
+            });
+          } //end if.
+          else {
+            //cep é inválido.
+            limpa_formulário_cep();
+            alert("Formato de CEP inválido.");
+          }
+        } //end if.
+        else {
+          //cep sem valor, limpa formulário.
+          limpa_formulário_cep();
+        }
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
