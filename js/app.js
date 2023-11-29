@@ -113,7 +113,8 @@ function filtrar(){
 
 }
 
-btn.addEventListener("click",filtrar)
+ btn.addEventListener("click",filtrar);
 
 
-carregarContainer()
+carregarContainer();
+

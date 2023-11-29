@@ -359,3 +359,11 @@ footer i:hover {
     color:#073892;
     margin-top: 7px;
 }
+
+#bordaCliente{
+    border-left: 1px solid #1f5228;
+}
+#bordaServiço{
+    border-right: 1px solid #073892;
+
+}
