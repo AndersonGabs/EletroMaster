@@ -99,11 +99,11 @@
         </div>
 
       </div>
-      <div class="row col-12 col-md-10   m-auto   p-2">
+      <div class="row col-12 col-md-10  m-auto   px-2">
 
-        <div class="bg-white mx-auto row fonteWood  " style="border: 4px solid #036b14">
+        <div class="bg-white mx-auto row fonteWood  ">
 
-          <div class=" col-md-8 mx-auto col-10 my-0 p-0 ">
+          <div class="col-md-8 mx-auto  col-10 my-0 p-0 ">
             <form class="row  px-0 py-5 ">
 
               <div class="form-group col-md-6 col-6">
@@ -152,7 +152,7 @@
 
           </div>
 
-          <div class="row col-md-3 col-6 fs-1 m-auto text-center mb-5 mb-md-auto  me-md-0" id="bordaCliente"
+          <div class="row col-md-3 d-none d-md-block col-6 fs-1 m-auto text-center mb-5 mb-md-auto  " id="bordaCliente"
             data-aos="flip-right" data-aos-duration="500">
             <h4 class="fs-1 m-auto mb-2 text-center align-self-center" style="color: #036b14;">Cliente</h4>
 
@@ -162,63 +162,65 @@
               </figure>
             </div>
           </div>
+          <section id="serviço" class="row col-12 col-md-12   m-auto px-0">
+            <!-- inicio form2 -->
+
+
+            <div class="bg-white m-auto row  px-0 fonteWood " style="border-top: 1px solid rgb(184, 174, 174);">
+
+              <div class="row col-6 col-md-3 fs-1 m-auto d-none d-md-block text-center "
+                id="bordaServiço" data-aos="flip-right" data-aos-duration="500">
+                <h4 class="fs-1 m-auto mb-2 text-center align-self-center" style="color: #073892;">Serviço</h4>
+
+                <div class="col-12 mb-2  col-md-12 m-auto my-auto ">
+                  <figure>
+                    <img src="../img/repair.jpg" alt="reparo" class="w-100" style="object-fit: contain;">
+                  </figure>
+                </div>
+              </div>
+
+              <div class=" col-md-8 mx-auto col-10 px-0 ">
+                <form class="row  px-0 py-5 ">
+
+                  <div class="form-group col-md-6 col-6">
+                    <label for="nome">Tipo de Serviço</label>
+                    <select id="tipoServiço" class="form-control text-center">
+
+                      <option value="0">Selecione uma opção</option>
+                      <option value="Instalação elétrica">Instalação eletrica</option>
+                      <option value="Retirada de Aparelho">Retirada de Aparelho</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6 col-6">
+                    <label for="inputPassword4">Aparelho:</label>
+                    <input type="aparelho" class="form-control" id="aparelho" placeholder="Aparelho">
+                  </div>
+
+
+                  <div class="form-group col-md-12 col-12">
+                    <label for="exampleFormControlTextarea1">Defeito/Descrição do Problema:</label>
+                    <textarea class="form-control" id="defeito" rows="2"></textarea>
+                  </div>
+
+                  <div class="form-group col-md-7 col-12 ">
+                    <label for="inputCity">Data e Horario de Serviço</label>
+                    <input type="datetime-local" name="rua" id="data" class="form-control">
+                  </div>
+
+
+
+                </form>
+
+              </div>
+            </div>
+
+
+          </section>
         </div>
       </div>
     </section>
     <!-- fim form1  -->
-    <section id="serviço" class="mt-3">
-      <!-- inicio form2 -->
-      <div class="row col-12 col-md-10   m-auto   p-2">
-        <div class="bg-white mx-auto row fonteWood " style="border: 4px solid #073892">
 
-          <div class="row col-6 col-md-3 fs-1 m-auto text-center mt-5 mt-md-auto me-md-0 " id="bordaServiço"
-            data-aos="flip-right" data-aos-duration="500">
-            <h4 class="fs-1 m-auto mb-2 text-center align-self-center" style="color: #073892;">Serviço</h4>
-
-            <div class="col-12 mb-2  col-md-12 m-auto my-auto ">
-              <figure>
-                <img src="../img/repair.jpg" alt="reparo" class="w-100" style="object-fit: contain;">
-              </figure>
-            </div>
-          </div>
-
-          <div class=" col-md-8 mx-auto col-10 px-0 ">
-            <form class="row  px-0 py-5 labelazul ">
-
-              <div class="form-group col-md-6 col-6">
-                <label for="nome">Tipo de Serviço</label>
-                <select id="tipoServiço" class="form-control text-center">
-
-                  <option value="0">Selecione uma opção</option>
-                  <option value="Instalação elétrica">Instalação eletrica</option>
-                  <option value="Retirada de Aparelho">Retirada de Aparelho</option>
-                </select>
-              </div>
-              <div class="form-group col-md-6 col-6">
-                <label for="inputPassword4">Aparelho:</label>
-                <input type="aparelho" class="form-control" id="aparelho" placeholder="Aparelho">
-              </div>
-
-
-              <div class="form-group col-md-12 col-12">
-                <label for="exampleFormControlTextarea1">Defeito/Descrição do Problema:</label>
-                <textarea class="form-control" id="defeito" rows="2"></textarea>
-              </div>
-
-              <div class="form-group col-md-7 col-12 ">
-                <label for="inputCity">Data e Horario de Serviço</label>
-                <input type="datetime-local" name="rua" id="data" class="form-control">
-              </div>
-
-
-
-            </form>
-
-          </div>
-        </div>
-      </div>
-
-    </section>
     <div class=" row  m-auto col-12 text-center p-5   ">
       <button type="submit" class="   my-auto text-center col-5 col-md-3  mx-auto btn btn-outline-warning"
         id="btnAgendar">Agendar</button>
@@ -227,8 +229,8 @@
 
     </div>
     <div class="col-12 col-md-7 m-auto bg-black text-white">
-      
-      <div class= "p-2 mb-3" id="divExibir"></div>
+
+      <div class="p-2 mb-3" id="divExibir"></div>
     </div>
   </main>
   <!-- Inicio do formulario -->
